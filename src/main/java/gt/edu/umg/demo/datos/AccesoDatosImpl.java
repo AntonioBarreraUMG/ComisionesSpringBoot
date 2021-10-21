@@ -15,8 +15,8 @@ import java.util.Objects;
  * @author jeant
  */
 public class AccesoDatosImpl implements AccesoDatos{
-    private static final List<Empleado> listaEmpleados = new ArrayList<>();
-    private static int contador = 0;
+    private final List<Empleado> listaEmpleados = new ArrayList<>();
+    private int contador = 0;
     
     @Override
     public List<Empleado> seleccionar() {
